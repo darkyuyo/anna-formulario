@@ -1,16 +1,38 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200;300&family=Dancing+Script:wght@400&family=Inter:wght@400;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: Inter, system-ui, 'Segoe UI', sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --color-anna-cream: #f8f8f1;
+  --color-anna-burgundy: #3b1512;
+  --color-anna-burgundy-border: #391713;
+  --color-anna-burgundy-texture: #5c1d1d;
+  --color-anna-accent: #c7878e;
+  --color-anna-dark: #53231e;
+  --color-anna-muted: #e1d6c6;
+  --color-anna-placeholder: #584e40;
+  --color-anna-bg: #18181a;
+  --color-anna-ink: #231f20;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-#root {
-  min-height: 100vh;
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
 }
