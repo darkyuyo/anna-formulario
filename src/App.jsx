@@ -437,7 +437,7 @@ function App() {
 
       {/* ── Desktop view ── */}
       <div className="relative hidden min-h-dvh overflow-hidden lg:block">
-        <aside className="absolute top-1/2 left-[clamp(1rem,2.5vw,2.5rem)] z-10 w-[min(28vw,380px)] -translate-y-1/2">
+        <aside className="absolute top-[calc(50%-clamp(1.5rem,4.5vh,3.25rem))] left-[clamp(1rem,2.5vw,2.5rem)] z-10 w-[min(28vw,380px)] -translate-y-1/2">
           <div className="w-full">
             <img
               className="block w-full"
@@ -449,8 +449,8 @@ function App() {
           </div>
         </aside>
 
-        <section className="flex min-h-dvh items-center justify-center overflow-hidden py-4 pl-[clamp(12rem,28vw,22rem)] pr-4">
-          <div className="@container relative aspect-[1724/2153] h-auto w-[min(calc(100vw-clamp(12rem,28vw,22rem)-2rem),calc((100dvh-2rem)*1724/2153))] max-h-[min(92dvh,1140px)] shrink-0 origin-center drop-shadow-[0_32px_64px_rgba(0,0,0,0.45)]">
+        <section className="flex min-h-dvh items-center justify-center overflow-hidden pb-4 pt-0 pl-[clamp(12rem,28vw,22rem)] pr-4">
+          <div className="@container relative aspect-[1724/2153] h-auto w-[min(calc(100vw-clamp(12rem,28vw,22rem)-2rem),calc((100dvh-2rem)*1724/2153))] max-h-[min(88dvh,1080px)] shrink-0 origin-center -translate-y-[clamp(2.5rem,8vh,6.5rem)] drop-shadow-[0_32px_64px_rgba(0,0,0,0.45)]">
             <div className={`${paperSceneClass} z-0`} aria-hidden="true">
               <img
                 className="absolute inset-0 h-full w-full rounded-[1.2cqw] object-fill"
@@ -471,7 +471,7 @@ function App() {
             </div>
 
             <section
-              className={`absolute top-[46.5%] left-[18.8%] z-40 w-[66%] rounded-[1.1cqw] border border-anna-burgundy-border bg-anna-burgundy px-[4.2cqw] shadow-[0_0.9cqw_1.7cqw_rgba(0,0,0,0.25)] ${
+              className={`absolute top-[45%] left-[18.8%] z-40 w-[66%] rounded-[1.1cqw] border border-anna-burgundy-border bg-anna-burgundy px-[4.2cqw] shadow-[0_0.9cqw_1.7cqw_rgba(0,0,0,0.25)] ${
                 isSubmitted
                   ? 'flex min-h-[28.5cqh] flex-col py-[3.4cqw]'
                   : 'grid max-h-[62cqh] gap-[clamp(0.75rem,2.2cqw,1.75rem)] overflow-y-auto overscroll-contain py-[clamp(2rem,4.8cqw,3.5rem)] [scrollbar-width:thin]'
@@ -501,7 +501,7 @@ function App() {
 
             <div className={`${paperSceneClass} z-50`} aria-hidden="true">
               <img
-                className="absolute top-[47.3%] left-[69.7%] w-[13%]"
+                className="absolute top-[45.8%] left-[69.7%] w-[13%]"
                 src="/assets/object-right-76481c.png"
                 alt=""
               />
