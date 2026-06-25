@@ -30,6 +30,13 @@ const desktopCard = {
   gapFieldMobile: 'gap-[clamp(0.35rem,2vw,0.5rem)]',
 }
 
+const vistoXGustoClass = {
+  mobile:
+    'mt-[clamp(1rem,5vw,1.5rem)] text-center font-biro text-[clamp(2.25rem,18vw,4.58rem)] leading-none tracking-normal text-anna-muted -rotate-[12.85deg]',
+  desktop:
+    'absolute top-[27.5%] left-[49%] z-20 m-0 origin-center whitespace-nowrap font-biro text-[4.25cqw] leading-none tracking-normal text-anna-ink -rotate-[12.85deg]',
+}
+
 function SuccessView({ variant, titleId, showClosetMessage }) {
   const isMobile = variant === 'mobile'
 
@@ -428,9 +435,7 @@ function App() {
             </section>
           </div>
 
-          <p className="mt-[clamp(1rem,5vw,1.5rem)] text-center font-script text-[clamp(1.25rem,5.5vw,1.5rem)] text-anna-muted/80">
-            Visto x gusto
-          </p>
+          <p className={vistoXGustoClass.mobile}>Visto x gusto</p>
         </div>
       </div>
 
@@ -466,9 +471,7 @@ function App() {
                 src="/assets/object-left-59747c.png"
                 alt=""
               />
-              <p className="absolute top-[27.5%] left-[49%] z-20 m-0 font-script text-[4.25cqw] leading-none text-anna-ink">
-                Visto x gusto
-              </p>
+              <p className={vistoXGustoClass.desktop}>Visto x gusto</p>
             </div>
 
             <section
