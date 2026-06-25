@@ -13,7 +13,7 @@ const STYLE_OPTIONS = [
 const paperSceneClass =
   'pointer-events-none absolute inset-0 origin-[50%_38%] scale-[1.62]'
 
-// Figma card ≈729px wide, 61.5% of @container → px/729*61.5 cqw
+// Figma card ≈786px wide, 66% of @container → px/786*66 cqw
 const desktopCard = {
   title: 'text-[clamp(1.5rem,3.84cqw,2.84rem)]',
   subtitle: 'text-[clamp(0.75rem,1.35cqw,1rem)]',
@@ -478,7 +478,7 @@ function App() {
             </div>
 
             <section
-              className={`absolute top-[46.5%] left-[18.8%] z-40 w-[61.5%] rounded-[1.1cqw] border border-anna-burgundy-border bg-anna-burgundy px-[4.2cqw] shadow-[0_0.9cqw_1.7cqw_rgba(0,0,0,0.25)] ${
+              className={`absolute top-[46.5%] left-[18.8%] z-40 w-[66%] rounded-[1.1cqw] border border-anna-burgundy-border bg-anna-burgundy px-[4.2cqw] shadow-[0_0.9cqw_1.7cqw_rgba(0,0,0,0.25)] ${
                 isSubmitted
                   ? 'flex min-h-[28.5cqh] flex-col py-[3.4cqw]'
                   : 'grid max-h-[62cqh] gap-[clamp(0.75rem,2.2cqw,1.75rem)] overflow-y-auto overscroll-contain py-[clamp(2rem,4.8cqw,3.5rem)] [scrollbar-width:thin]'
