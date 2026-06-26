@@ -41,12 +41,12 @@ function SuccessView({ variant, titleId, showClosetMessage }) {
   const isMobile = variant === 'mobile'
 
   const titleClass = isMobile
-    ? 'm-0 font-serif text-[clamp(1.5rem,6.5vw,2.125rem)] leading-[1.1] font-extralight tracking-normal uppercase text-anna-cream'
-    : 'm-0 font-serif text-[clamp(1.5rem,3.84cqw,2.84rem)] leading-[1.1] font-extralight tracking-normal uppercase text-anna-cream'
+    ? 'anna-diacritics m-0 font-serif text-[clamp(1.5rem,6.5vw,2.125rem)] leading-[1.2] font-light tracking-normal uppercase text-anna-cream'
+    : 'anna-diacritics m-0 font-serif text-[clamp(1.5rem,3.84cqw,2.84rem)] leading-[1.2] font-light tracking-normal uppercase text-anna-cream'
 
   const textClass = isMobile
-    ? 'font-futura text-center text-[clamp(0.78rem,3.2vw,1.1rem)] leading-[1.15] tracking-[0.01em] text-anna-cream'
-    : 'font-futura text-center text-[clamp(0.7rem,1.91cqw,1.42rem)] leading-[1.15] tracking-[0.01em] text-anna-cream'
+    ? 'anna-diacritics font-futura text-center text-[clamp(0.78rem,3.2vw,1.1rem)] leading-[1.4] tracking-[0.01em] text-anna-cream'
+    : 'anna-diacritics font-futura text-center text-[clamp(0.7rem,1.91cqw,1.42rem)] leading-[1.4] tracking-[0.01em] text-anna-cream'
 
   const paragraphGapClass = 'mb-[0.7em] last:mb-0'
 
@@ -74,13 +74,13 @@ function SuccessView({ variant, titleId, showClosetMessage }) {
         </p>
 
         {showClosetMessage && (
-          <p className={`m-0 font-medium ${paragraphGapClass}`}>
+          <p className={`m-0 font-semibold ${paragraphGapClass}`}>
             si haz seleccionado la opción para vender tu closet, pronto tendrás
             noticias nuestras.
           </p>
         )}
 
-        <p className={`m-0 font-medium ${paragraphGapClass}`}>
+        <p className={`m-0 font-semibold ${paragraphGapClass}`}>
           Además, tendrás acceso a{' '}
           <span className="font-bold">
             beneficios exclusivos y acceso anticipado
@@ -88,7 +88,7 @@ function SuccessView({ variant, titleId, showClosetMessage }) {
           a nuestro lanzamiento.
         </p>
 
-        <p className="m-0 font-medium">Gracias por estar aquí desde el comienzo.</p>
+        <p className="m-0 font-semibold">Gracias por estar aquí desde el comienzo.</p>
       </div>
 
       <p className={`m-0 shrink-0 font-medium ${textClass}`}>
@@ -161,8 +161,8 @@ function WaitlistForm({
           id={titleId}
           className={
             isMobile
-              ? 'mb-2 font-serif text-[clamp(1.5rem,6.5vw,2rem)] leading-[1.1] font-extralight tracking-normal uppercase'
-              : `mb-[0.85cqw] font-serif leading-[1.1] font-extralight tracking-normal uppercase ${desktopCard.title}`
+              ? 'anna-diacritics mb-2 font-serif text-[clamp(1.5rem,6.5vw,2rem)] leading-[1.2] font-light tracking-normal uppercase'
+              : `anna-diacritics mb-[0.85cqw] font-serif leading-[1.2] font-light tracking-normal uppercase ${desktopCard.title}`
           }
         >
           Únete a la comunidad
@@ -275,7 +275,7 @@ function WaitlistForm({
             checked={closetContact}
             onChange={(event) => setClosetContact(event.target.checked)}
           />
-          <span>quieres que te contactemos para ser vender tu clóset</span>
+          <span>quieres que te contactemos para vender tu clóset</span>
         </label>
 
         <label
